@@ -1,0 +1,70 @@
+/*
+All images used belong to:
+Markus Spiske -  https://500px.com/markusspiske
+Yinan CHen -  https://500px.com/webmaster85 
+Fahim Akhter -  https://500px.com/fahimakhter 
+*/
+
+body{
+    padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+footer{
+ clear: both;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 2.5%;
+    float: left;
+}
+
+img{
+    width: 90%;
+    transition: transform 1.1s ease-in-out;
+}
+
+
+img:hover{
+     transform: rotate(360deg) scale(2);
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+    
+    img:hover{
+        transform: rotateY(90deg);
+    }
+}
+
+
+
+@media screen and (min-width: 600px){
+
+   li {
+       width: 50%;
+      
+    } 
+    img:hover{
+    transform: translate(50px, 20px) skewX(30deg);   
+
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+    li{
+        width: 25%;
+    }
+img:hover{
+     transform: rotate(360deg) scale(2);
+    }    
+}
